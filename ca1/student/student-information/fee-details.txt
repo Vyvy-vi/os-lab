@@ -1,0 +1,4 @@
+# Annual fees,Pending fees,fine
+120000
+69000
+690
