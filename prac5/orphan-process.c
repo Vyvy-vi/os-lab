@@ -13,9 +13,9 @@ int main(void) {
 	if (pid == 0) {
 		printf("Child process is sleeping\n");
 		sleep(10);
-		printf("Orphan child parent id: %d", getppid());
+		printf("Orphan child parent id: %d\n", getppid());
 	} else {
-		printf("parent process completed");
+		printf("parent process completed\n");
 	}
 
 	return 0;
