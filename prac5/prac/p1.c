@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char* argv[]) {
-	int n = 1;
-	if (argc > 1) {
-		n = argv[1];
-	}
-	fork();
-	printf("%d\n", n);
+#define N 4
 
+int main() {
+  int pid;
+  for (int i = 0; i < N; i++) {
+    pid = fork();
+  }
+  printf(".\n");
 }
