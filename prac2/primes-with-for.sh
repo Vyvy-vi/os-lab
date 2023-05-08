@@ -15,16 +15,16 @@ printf "%d " 2
 
 for ((i=3; i <= $lim; i+=2))
 do
-	remainder=1
+	prime=1
 	for ((j=2; j*j <= $i; j++))
 	do
-		remainder=$((i%j))
-		if ((!$remainder));then
+		prime=$((i%j))
+		if ((!$prime));then
 			break
 		fi
 	done
 
-	if (($remainder)) ;then
+	if (($prime)) ;then
 		printf "%d " $i
 	fi
 done
