@@ -4,11 +4,11 @@
 #include <dirent.h>
 #include <unistd.h>
 
-int main() {
+int main(int argc, char* argv[]) {
   DIR* dp;
   struct dirent *direntPt;
 
-  dp = opendir("prac2");
+  dp = opendir(argv[1]);
  
   if (dp == NULL)
     printf("Error");
